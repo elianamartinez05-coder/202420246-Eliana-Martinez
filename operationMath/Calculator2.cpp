@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     int ValuerUser1, ValuerUser2;
-    int AddResult, SubResult, MultResult, DivResult;
-    //Addition = 1 Subtraction = 2  Multiplication = 3 Division = 4
+    int AddResult, SubResult, MultResult, DivResult, ModulResult;
+    //Addition = 1 Subtraction = 2  Multiplication = 3 Division = 4 modulo = 5
     int SelectUser;
 
     cout <<"Hola, esta es una calculadora simple" <<endl;
@@ -20,6 +20,7 @@ int main() {
     cout <<"Resta = 2" <<endl;
     cout <<"Multiplicacion = 3" <<endl;
     cout <<"División = 4" <<endl;
+    cout <<"Modulo = 5" <<endl;
     cin >> SelectUser;
 
     switch (SelectUser)
@@ -47,6 +48,12 @@ int main() {
     case 4:
         DivResult = ValuerUser1 / ValuerUser2;
         cout << ValuerUser1 <<"/" <<ValuerUser2 <<"=" <<DivResult <<endl;
+        break;
+
+        //Modulo
+    case 5:
+        ModulResult = ValuerUser1 % ValuerUser2;
+        cout << ValuerUser1 <<"%" <<ValuerUser2 <<"=" <<ModulResult<<endl;
         break;
     default:
         
