@@ -34,18 +34,15 @@ int main () {
     {
         modulResult = Valuer1 % Valuer2;
         cout << "El resultado del modulo es: " << modulResult << endl;
-
     } 
     else if (selectOperation==4) 
     {
         restResult = Valuer1-Valuer2;
         cout << "El resultado de la resta es: " << restResult << endl;
-
     } 
     else if (selectOperation==5) 
     {
         sumResult = Valuer1+Valuer2;
         cout << "El resultado de la suma es: " << sumResult << endl;
-
     } 
 }
