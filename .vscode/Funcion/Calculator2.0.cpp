@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void messengerNumberOfOperations (int selectUser) {
+void messengerNumberOfOperations () {
     cout <<"Suma = 1" <<endl;
     cout <<"Resta = 2" <<endl;
     cout <<"Multiplicacion = 3" <<endl;
@@ -13,7 +13,7 @@ void messengerNumberOfOperations (int selectUser) {
 
 void operationCase (int selectUser, int valuer1, int valuer2) {
 
-    int addResult, int subResult, int modulResult, int mulResult, int divResult;
+    int addResult, subResult, modulResult, mulResult, divResult;
 
     switch (selectUser)
     {
@@ -53,6 +53,7 @@ void operationCase (int selectUser, int valuer1, int valuer2) {
 
         break;
     }
+    cout <<"----------------------------------------------" <<endl;
 }
 
 int main() {
@@ -64,7 +65,7 @@ int main() {
     cin >> valuer2;
     cout <<"----------------------------------------------" <<endl;
 
-    messengerNumberOfOperations ();
+    messengerNumberOfOperations();
     cin >> selectUser;
 
     operationCase (selectUser, valuer1, valuer2);
