@@ -1,4 +1,4 @@
-#include<ioestream>
+#include <iostream>
 
 using namespace std;
 
@@ -9,7 +9,6 @@ void messengerNumberOfOperations (int selectUser) {
     cout <<"Multiplicacion = 3" <<endl;
     cout <<"División = 4" <<endl;
     cout <<"Modulo = 5" <<endl;
-    cin >> SelectUser;
 } 
 
 int main() {
@@ -21,5 +20,7 @@ int main() {
     cin >> valuer2;
     cout <<"----------------------------------------------" <<endl;
 
-
+    messengerNumberOfOperations (selectUser);
+    cin >> selectUser;
+    
 }
