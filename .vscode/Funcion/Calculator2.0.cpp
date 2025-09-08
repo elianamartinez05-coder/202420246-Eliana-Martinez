@@ -3,12 +3,12 @@
 using namespace std;
 
 void messengerNumberOfOperations (int selectUser) {
-    cout <<"selecciona la operacion que deseas realizar: " <<endl;
     cout <<"Suma = 1" <<endl;
     cout <<"Resta = 2" <<endl;
     cout <<"Multiplicacion = 3" <<endl;
     cout <<"División = 4" <<endl;
     cout <<"Modulo = 5" <<endl;
+     cout <<"selecciona la operacion que deseas realizar: " <<endl;
 } 
 
 int main() {
@@ -22,5 +22,5 @@ int main() {
 
     messengerNumberOfOperations (selectUser);
     cin >> selectUser;
-    
+
 }
