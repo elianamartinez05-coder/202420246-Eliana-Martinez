@@ -6,8 +6,6 @@ void messengerNumberOfOperations () {
     cout <<"Suma = 1" <<endl;
     cout <<"Resta = 2" <<endl;
     cout <<"Multiplicacion = 3" <<endl;
-    cout <<"División = 4" <<endl;
-    cout <<"Modulo = 5" <<endl;
     cout <<"selecciona la operacion que deseas realizar: " <<endl;
 } 
 
@@ -36,17 +34,6 @@ void operationCase (int selectUser, int valuer1, int valuer2) {
         cout << valuer1 <<"x" <<valuer2 <<"=" << mulResult <<endl;
         break;
 
-        //División
-    case 4:
-        divResult= valuer1 / valuer2;
-        cout << valuer1 <<"/" << valuer2 <<"=" <<divResult <<endl;
-        break;
-
-        //Modulo
-    case 5:
-        modulResult = valuer1 % valuer2;
-        cout << valuer1 <<"%" << valuer2 <<"=" <<modulResult <<endl;
-        break;
     default:
         
         cout <<"La opcion seleccionada no existe :/" <<endl;
@@ -54,6 +41,17 @@ void operationCase (int selectUser, int valuer1, int valuer2) {
         break;
     }
     cout <<"----------------------------------------------" <<endl;
+}
+
+int getMax (int valuer1, int valuer2) {
+    if (valuer1>valuer2)
+    {
+        return valuer1;
+    }
+    else
+    {
+        return valuer2;
+    }
 }
 
 int main() {
@@ -69,7 +67,12 @@ int main() {
     cin >> selectUser;
 
     operationCase (selectUser, valuer1, valuer2);
+    int numberMax = getMax (valuer1, valuer2);
+    cout << "El numero mayor es: " <<numberMax <<endl;
 
+    cout <<"_______________________________________________" <<endl;
+
+    
     return 0;
 
 }
