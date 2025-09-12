@@ -10,6 +10,22 @@ void counter(int number){
         
 
     }
+void regressive(int number){
+    for (int i = number; i >= 0; i--)
+    {
+        cout << "Valor: " << i <<endl;
+    }
+}
+void counterRegrssive(int number){
+    int contador = number;
+    while (contador >= number)
+    {
+        cout << contador <<endl;
+        contador --;
+    }
+    
+}
+
     
 }
 
@@ -18,6 +34,6 @@ int main(){
     cout <<"escriba el limite de contador";
     cin >> userNumber;
 
-    counter(userNumber);
+    regressive(userNumber);
     return 0;
 }
