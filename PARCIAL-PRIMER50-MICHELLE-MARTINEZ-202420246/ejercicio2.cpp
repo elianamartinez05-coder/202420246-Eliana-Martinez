@@ -5,7 +5,7 @@ void shiftsWorked(int turn1, int turn2){
     if (turn1<=turn2)
     {
         int counter = turn1;
-        cout << "La maquina trajajó los turnos: " ;
+        cout << "La maquina trabajó los turnos: " ;
         while (counter <= turn2)
         {
             cout <<counter <<" ";
