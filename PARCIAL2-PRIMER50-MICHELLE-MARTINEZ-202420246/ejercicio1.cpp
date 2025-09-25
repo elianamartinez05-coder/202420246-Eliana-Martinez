@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void calculateTotal(int hours, int rate, int total){
+int calculateTotal(int hours, int rate, int total){
     total = hours * rate;
-    cout <<total <<endl;
+    return total;
 }
 
 void printIvoice(string plate, int hours, int rate){
-    cout << "su placa es: " <<plate <<", horas: " <<hours <<", tarifa: " <<rate <<", total a pagar:" <<pay <<endl; 
+    
+    cout << "su placa es: " <<plate <<", horas: " <<hours <<", tarifa: " <<rate <<", total a pagar:" <<endl; 
 }
 
 int main(){
@@ -21,7 +22,9 @@ int main(){
     cout <<"ingrese la tarifa del parqueadero: "<<endl;
     cin >> rate;
 
-    calculateTotal(hours, rate);
+    int pay;
+    pay = calculateTotal();
+    cout <<pay <<endl;
 
     printIvoice(plateCar, hours, rate);
 
