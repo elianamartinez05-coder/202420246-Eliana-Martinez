@@ -3,7 +3,7 @@
 using namespace std;
 
 void espaceString(){
-    string textOriginal = "Hola";
+    string textOriginal = "hola soy cpp";
     string newString ="";
     cout << textOriginal <<endl;
 
@@ -19,9 +19,8 @@ void espaceString(){
         {
             newString += letter;
         }
-        
-        cout << newString<<endl;
     }
+    cout << newString<<endl;
 }
 
 void duplicateString(){
@@ -41,7 +40,7 @@ void duplicateString(){
 }
 
 void removeVowels(){
-    string textOriginal = "Hola";
+    string textOriginal = "Katriel";
     string newString ="";
     cout << textOriginal <<endl;
     
@@ -63,7 +62,7 @@ void removeVowels(){
 }
 
 void invertString(){
-    string textOriginal = "Hola";
+    string textOriginal = "Michelle";
     string newString ="";
     cout << textOriginal <<endl;
     
@@ -89,13 +88,13 @@ void counterString(){
         {
             counter ++;
         }
-        cout<<counter <<endl;
     }
     cout<<counter <<endl;
 }
 
 int main(){
-    spaceString();
+
+    espaceString();
     duplicateString();
     removeVowels();
     invertString();
