@@ -2,11 +2,8 @@
 
 using namespace std;
 
-void consonantString(){
-    string textUsuar = "hola";
+void consonantString(string textUsuar){
     string newString ="";
-    cout << textUsuar <<endl;
-    
 
     for(int i = 0; i < textUsuar.size(); i++)
     {
@@ -18,13 +15,17 @@ void consonantString(){
         }
         else
         {
-            newString +=
+            newString += letter;
         }
+        cout<<newString;
     }
     cout <<newString <<endl;
 }
 
 int main(){
-    consonantString();
+    string textUsuar;
+    cout <<"escriba una palabra"<<endl;
+    cin >> textUsuar;
+    consonantString(textUsuar);
     return 0;
 }
