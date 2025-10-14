@@ -16,7 +16,7 @@ void palindromeString(){
     }
 
     cout <<newString<<endl;
-    if (example1 == newString)
+    if (newString ==example1 )
     {
         cout <<"Es una palabra palindroma" <<endl;
     }
