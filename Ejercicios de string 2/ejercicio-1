@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+bool characterMin(int passWord){
+    int counter = 0;
+
+    for(int i = 0; i < passWord.size(); i++)
+    {
+        char letter = passWord[i];
+        counter ++:
+        if (counter <= 7)
+        {
+            cout <<"contraseña No valida" <<endl;
+        }
+        else
+        {
+            return true;
+        }
+        
+    }
+    
+}
+
+
+void passwordString(){
+    string textExample = "123Miclave!";
+
+    characterMin(textExample);
+
+}
+
+
+
+int main(){
+    passwordString();
+    retunr 0;
+}
