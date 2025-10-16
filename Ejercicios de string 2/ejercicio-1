@@ -21,6 +21,26 @@ bool characterMin(int passWord){
     
 }
 
+bool characterSpecial(int passWord){
+
+    for(int i = 0; i < passWord.size(); i++)
+    {
+        char letter = passWord[i];
+        
+
+        if (letter == "" )
+        {
+            cout <<"contraseña No valida" <<endl;
+        }
+        else
+        {
+            return true;
+        }
+        
+    }
+    
+}
+
 
 void passwordString(){
     string textExample = "123Miclave!";
