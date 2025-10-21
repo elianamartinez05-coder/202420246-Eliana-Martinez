@@ -4,7 +4,7 @@ using namespace std;
 void counterSign(string sign){
     int positive = 0;
     int negative = 0;
-    int average;
+    double average;
 
     for(int i = 0; i < sign.size(); i++)
     {
@@ -24,7 +24,7 @@ void counterSign(string sign){
 
     if (negative > 0)
     {
-        average = positive/negative;
+        average = (double)positive/negative;
         cout <<"El promedio de señales positivas sobre negativas es: " <<average <<endl;
     }
     else
