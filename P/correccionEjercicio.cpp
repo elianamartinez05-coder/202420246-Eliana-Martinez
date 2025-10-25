@@ -12,12 +12,12 @@ bool characterMin(string passWord){
            
     }
     if (counter >= 8)
-     {
-            return true;
-        }
-        else
-        {
-            return false;
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
 
