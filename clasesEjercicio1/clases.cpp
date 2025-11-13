@@ -69,6 +69,8 @@ class IntOfArrayManager{
                 }
                 break;
             case 7:
+                delete[] saleNames;
+                delete[] saleValues;
                 running = false;
                 break;
             default:
@@ -76,9 +78,6 @@ class IntOfArrayManager{
                 break;
             }
         }
-
-        delete[] saleNames;
-        delete[] saleValues;
     }
 
 
